@@ -1,0 +1,559 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+	<title><Hello/></title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	<style>
+		
+		.item header h3 {
+			font-size: 1.25em;
+			font-weight: 400;
+		}
+		p, ul, ol, dl, table {
+			margin-bottom: 0;
+		}
+		img.image.fit.paper {
+		    width: 300px;
+		    height: auto;
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+		a.button.scrolly.white {
+		    background: none;
+		    font-weight: 600;
+		    border: 1px solid #FFF;
+		    transition:  1s
+		    -webkit-transition:  1s;
+		}
+		a.button.scrolly.white: hover{
+		    border: 3px solid #FFF;
+		}
+		a.button.scrolly.black {
+		    color: #000 !important;
+		    background: none;
+		    font-weight: 400;
+		    border: 1px solid #000;
+		    padding: 0.5cm 1cm;
+		    border-radius: none !important;
+		}
+		.image.avatar48 img {
+		    height: auto;
+		}
+		form textarea {
+		    min-height: 7em;
+		}
+		input[type="submit"]{
+    		background: none !important;
+   			color: #000 !important;
+   	 		border: 1px solid #000;
+    		font-weight: 600;
+		}
+		.html {width: 85%; background-color: #2bc253;}
+		.c {width: 80%; background-color: #fc858e;}
+		.jQuery {width: 76%; background-color: #f1a165;}
+		.nodejs {width: 63%; background-color: #8ec1f8;}
+		.php {width: 69%; background-color: #f1afe4;}
+		.angularjs {width: 58%; background-color: #d8d894;}
+		.cpp {width: 62%; background-color: #b5e058;}
+		.css {width: 68%; background-color: #8681fc;}
+		.prezi {width: 74%; background-color: #fc515e;}
+		.skillText{
+			text-align: left
+		}
+		.skills {
+		    text-align: right;
+		    padding-right: 20px;
+		    line-height: 21px;
+		    color: white;
+		    border-radius: 5px;
+		}
+		.skillItem{
+			margin-bottom: 12px !important
+		}
+		p.barText {
+		    font-size: 18px;
+		}
+		section#skillsection>.container>.row {
+		}
+		.skillHeading {    
+			margin: 1em 0 2em;
+			text-align: left; 
+			font-size: 19px;
+			border-bottom: 1px dotted #ccc;
+		}
+		a.button.scrolly.black:hover {
+		    background: #212528;
+		    color: #f0f5f5 !important;
+		    transition: 0.5s all;
+		}	
+		p.aboutText {
+		    margin-top: 39px;
+		}	    
+
+		    
+	</style>
+</head>
+<body>
+
+<!-- Header -->
+<div id="header">
+
+	<div class="top">
+
+		<!-- Logo -->
+		<div id="logo">
+			<div class="image avatar48"><img src="images/openup.png" alt="banner_img" id="banner_img"/></div>
+			<div class="logoText">
+				<h1 id="title">Hassan Nomani Alvi</h1>
+				<p>Computer Science Engineer</p>
+			</div>
+
+		</div>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<!--
+                Prologue's nav expects links in one of two formats:
+                1. Hash link (scrolls to a different section within the page)
+                   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+                2. Standard link (sends the user to another page/site)
+                   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+            -->
+			<ul>
+				<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+				<li><a href="#education" id="education-link" class="skel-layers-ignoreHref"><span class="icon fa-graduation-cap">Education</span></a></li>
+				<li><a href="#experience" id="experience-link" class="skel-layers-ignoreHref"><span class="icon fa-star">Experience</span></a></li>
+				<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+				<li><a href="#skillsection" id="skillsection-link" class="skel-layers-ignoreHref"><span class="icon fa-bar-chart">Skills</span></a></li>
+				<li><a href="#publications" id="publications-link" class="skel-layers-ignoreHref"><span class="icon fa-book">Publications</span></a></li>
+				<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+				<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+			</ul>
+		</nav>
+
+	</div>
+
+	<div class="bottom">
+
+		<!-- Social Icons -->
+		<ul class="icons">
+     		<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="https://www.facebook.com/iamredsaiyan" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+            <li><a href="https://www.linkedin.com/in/hassan-nomani-alvi/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a href="mailto:nomanialvi@gmail.com?Subject=Hello" target="_top" class="icon fa-envelope"><span class="label">Email</span></a></li>
+		</ul>
+
+	</div>
+
+</div>
+
+<!-- Main -->
+<div id="main">
+
+	<!-- Intro -->
+	<section id="top" class="one dark cover">
+		<div class="container">
+
+			<header>
+				<h2 class="alt">Hi! <strong>I am Hassan Nomani Alvi,</strong><br />
+				</h2>
+				<h3 class="alt">A  Web Developer and a Software Engineer</h3>
+				<!--<p>Ligula scelerisque justo sem accumsan diam quis<br />
+                vitae natoque dictum sollicitudin elementum.</p>-->
+			</header>
+
+			<footer>
+				<a href="#education" class="button scrolly white">Education</a>
+			</footer>
+
+		</div>
+	</section>
+
+	<!--Education -->
+	<section id="education" class="two">
+		<div class="container">
+
+			<header>
+				<h2>Education</h2>
+			</header>
+
+			<p>
+				I have completed my graduation from <b>Military Institute of Science and Technology</b> in <b>Computer
+				Science and Engineering</b> in January, 2016
+			</p>
+			<footer>
+				<a href="#experience" class="button scrolly black">Experience</a>
+			</footer>
+
+
+		</div>
+	</section>
+
+	<!--Experience -->
+	<section id="experience" class="two">
+		<div class="container">
+
+			<header>
+				<h2>Experience</h2>
+			</header>
+
+			<div class="row">
+				<div class="6u 12u$(mobile)">
+					<article class="item">
+						<header>
+							<h3>Monist IT</h3>
+						</header>
+						<h5>Junior Software Engineer</h5>
+						<p>Node.js, AngularJS, Express.js, MongoDB, JQuery</p>
+						<p class="greySmall">October 17, 2016- Current</p>
+					</article>
+					<article class="item">
+						<header>
+							<h3>NeshMedia Bangladesh </h3>
+						</header>
+						<h5>Web Developer</h5>
+						<p>PHP, MySQL, CodeIgniter, WordPress, CSS3, JQuery</p>
+						<p class="greySmall">May 3, 2016 - October 10, 2016</p>
+
+					</article>
+				</div>
+
+				<div class="6u 12u$(mobile)">
+					<article class="item">
+						<header>
+							<h3>Military Institute of Science and Technology</h3>
+						</header>
+						<h5>Lab Assistant</h5>
+						<p>C</p>
+						<p class="greySmall">September 1, 2015 - October 15, 2015</p>
+
+					</article>
+					<article class="item">
+						<header>
+							<h3>Military Institute of Science and Technology </h3>
+						</header>
+						<h5>Instructor-Coding Session</h5>
+						<p>Android, SQLite</p>
+						<p class="greySmall">March 10, 2016 - April 21, 2016</p>
+
+					</article>
+				</div>
+			</div>
+
+			<footer>
+				<a href="#portfolio" class="button scrolly black">Portfolio</a>
+			</footer>
+
+
+		</div>
+	</section>
+
+
+
+	<!-- Portfolio -->
+	<section id="portfolio" class="two">
+		<div class="container">
+
+			<header>
+				<h2>Portfolio</h2>
+			</header>
+
+			<p>I have worked in several langauages like -PHP, MySQL, Node.js, AngularJS, MongoDB, JQuery, Java, Android.</p><br>
+			<h3 class="skillHeading">
+				Website / Application Development and Design
+			</h3>
+			<div class="row">
+				<div class="4u 12u$(mobile)">
+					<article class="item">
+						<a href="https://podhop.com" class="image fit"><img src="images/podhop.png" alt="" /></a>
+						<header>
+							<h3>Podhop</h3>
+						</header>
+					</article>
+					<article class="item">
+						<a href="http://amaderparis.com" class="image fit"><img src="images/amaderparis.png" alt="" /></a>
+						<header>
+							<h3>Amader Paris</h3>
+						</header>
+					</article>
+					<article class="item">
+						<a href="android.html" class="image fit"><img src="images/android.png" alt="Android" /></a>
+						<header>
+							<h3>DiaHealth</h3>
+						</header>
+					</article>
+					<article class="item">
+						<a href="http://neutral.gr/machine" class="image fit"><img src="images/machine.png" alt="" /></a>
+						<header>
+							<h3>Machine </h3>
+						</header>
+					</article>
+				</div>
+				<div class="4u 12u$(mobile)">
+					<article class="item">
+						<a href="https://www.pictureframes-online.com.au/" class="image fit"><img src="images/frameshop.png" alt="" /></a>
+						<header>
+							<h3>Online Frame Shop</h3>
+						</header>
+					</article>
+					<article class="item">
+						<a href="http://thelivedemo.net/joomla/mods24" class="image fit"><img src="images/math.png" alt="" /></a>
+						<header>
+							<h3>Math Challenge </h3>
+						</header>
+					</article>
+					<article class="item">
+						<a href="http://hackasolution" class="image fit"><img src="images/hackasolution.png" alt="" /></a>
+						<header>
+							<h3>Hackasolution </h3>
+						</header>
+					</article>
+				</div>
+				<div class="4u$ 12u$(mobile)">
+					<article class="item">
+						<a href="tastehunt.html" class="image fit"><img src="images/Untitled1.png" alt="" /></a>
+						<header>
+							<h3>TasteHunt</h3>
+						</header>
+					</article>
+					<article class="item">
+						<a href="http://104.131.145.230/" class="image fit"><img src="images/patarboi.png" alt="" /></a>
+						<header>
+							<h3>Patar Boi</h3>
+						</header>
+					</article>
+					<article class="item">
+						<a href="#" class="image fit"><img src="images/navy.png" alt="" /></a>
+						<header>
+							<h4 style="font-weight:600">Database Management Software- Bangladesh Navy</h4>
+						</header>
+					</article>
+				</div>
+			</div>
+			<h3 class="skillHeading">
+				Prezi Presentation
+			</h3>
+			<div class="row">
+			<div class="4u 12u$(mobile)">
+				<article class="item">
+					<a href="https://prezi.com/_u8gkv87eweh/diabetes-lifestyle-management/" class="image fit"><img src="images/prezi.png" alt="" /></a>
+					<header>
+						<h3>Diabetes Lifestyle Management</h3>
+					</header>
+				</article>
+			</div>
+			<div class="4u 12u$(mobile)">
+				<article class="item">
+					<a href="https://prezi.com/nqmwwfn4m7fi/a-review-on-diabetes-patient-lifestyle-management-using-mobile-application/" class="image fit"><img src="images/prezi2.png" alt="" /></a>
+					<header>
+						<h3>A Review on Diabetes Patient Lifestyle Management Using Mobile Application</h3>
+					</header>
+				</article>
+			</div>
+			<div class="4u 12u$(mobile)">
+				<article class="item">
+					<a href="https://prezi.com/iyofljcsxog8/brain-drain/" class="image fit"><img src="images/prezi3.png" alt="" /></a>
+					<header>
+						<h3>Brain Drain in Bangladesh</h3>
+					</header>
+				</article>
+			</div>
+			</div>
+
+			<footer>
+				<a href="#skillsection" class="button scrolly black">Skills</a>
+			</footer>
+
+
+		</div>
+	</section>
+
+	<section id="skillsection" class="two">
+		<div class="container">
+
+			<header>
+				<h2>Skills</h2>
+			</header>
+
+			<p>Have a quick look over my skills bar. I also have experience working with C++, Java, Android, Shell Programming</p><br>
+
+			<div class="row">
+				<div class="12u 12u$(mobile)">
+					<article class="item skillItem">
+						<p class="skillText">HTML</p>	
+						<div class="skills html"><p class="barText">85%</p></div>
+					</article>
+					<article class="item skillItem">
+						<p class="skillText">C</p>	
+						<div class="skills c"><p class="barText">80%</p></div>
+					</article>
+					<article class="item skillItem">
+						<p class="skillText">jQuery</p>	
+						<div class="skills jQuery"><p class="barText">76%</p></div>
+					</article>
+					<article class="item skillItem">
+						<p class="skillText">node.js</p>	
+						<div class="skills nodejs"><p class="barText">63%</p></div>
+					</article>
+					<article class="item skillItem">
+						<p class="skillText">PHP</p>	
+						<div class="skills php"><p class="barText">69%</p></div>
+					</article>
+					<article class="item skillItem">
+						<p class="skillText">AngularJs</p>	
+						<div class="skills angularjs"><p class="barText">58%</p></div>
+					</article>
+					<article class="item skillItem">
+						<p class="skillText">CSS</p>	
+						<div class="skills css"><p class="barText">60%</p></div>
+					</article>
+					<article class="item skillItem">
+						<p class="skillText">C++</p>	
+						<div class="skills cpp"><p class="barText">62%</p></div>
+					</article>
+					<article class="item skillItem">
+						<p class="skillText">Prezi</p>	
+						<div class="skills prezi"><p class="barText">74%</p></div>
+					</article>
+				</div>
+			</div>
+
+			<footer>
+				<a href="#publications" class="button scrolly black">Publications</a>
+			</footer>
+
+
+		</div>
+	</section>
+
+	<section id="publications" class="two">
+		<div class="container">
+
+			<header>
+				<h2>Publications</h2>
+			</header>
+
+			<div class="row">
+				<div class="6u 12u$(mobile)">
+					<article class="item">
+						<img src="images/paper00.png" alt="ICCIT 2015" class="image fit paper"/> 
+						<header>
+							<h3>A Review on Diabetes Patient Lifestyle Management Using Mobile Application</h3>
+						</header>
+						<p>ICCIT 2015</p>
+					</article>
+				</div>
+				<div class="6u 12u$(mobile)">
+					<article class="item">
+						<img src="images/paper.png" alt="Meditec 2015" class="image fit paper"/> 
+						<header>
+							<h3>DiaHealth: A Smart App for Complete Diabetes Lifestyle Managementg Mobile Application</h3>
+						</header>
+						<p>Meditec 2016</p>
+					</article>
+				</div>
+			</div>
+
+			<footer>
+				<a href="#about" class="button scrolly black">About Me
+				</a>
+			</footer>
+		</div>	
+	</section>
+
+	<!-- About Me -->
+	<section id="about" class="three">
+		<div class="container">
+
+			<header>
+				<h2>About Me</h2>
+			</header>
+
+			<div class="row">
+				<div class="4u 12u$(mobile)">
+					<article class="item">
+						<img src="images/about.png" class="image fit"/>
+					</article>
+				</div>
+				<div class="1u 12u$(mobile)"></div>
+				<div class="6u 12u$(mobile)">
+					<article class="item">
+
+						<p class="aboutText">I am a person who chose to work because of passion. It is fun always to create something new, to help others to implement their dream. I love rain. My hobby is <a href="https://www.flickr.com/photos/101749830@N06/">photography.</a>  </p>
+					</article>
+				</div>
+			</div>
+
+				
+
+			
+
+		</div>
+	</section>
+
+	<!-- Contact -->
+	<section id="contact" class="four">
+		<div class="container">
+
+			<header>
+				<h2>Contact</h2>
+			</header>
+
+			<p>Feel free to contact me for any help. Send me an email to <a href="mailto:nomanialvi@gmail.com?Subject=Hello" target="_top">nomanialvi@gmail.com</a></p>
+			<p>or leave here a message</p><br>
+			<form method="post" action="https://script.google.com/macros/s/AKfycby3wLuTN3YwQmt1UJl27iFGFyFRsLxo2nw9Yei1DWRh8cEIAh1s/exec" id="gform">
+				<div class="row">
+					<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+					<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+					<div class="12u$">
+						<textarea name="message" placeholder="Message"></textarea>
+					</div>
+					<div class="12u$">
+						<input type="submit" value="Send Message" id="contactSubmitted" />
+					</div>
+				</div>
+			</form>
+			<div style="display: none;" id="thankyou_message">
+
+				<h2>Thanks! Will get back to you soon</h2>
+				</div>
+
+		</div>
+	</section>
+
+</div>
+
+<!-- Footer -->
+<div id="footer">
+
+	<!-- Copyright -->
+	<ul class="copyright">
+		<li>&copy; Hassan Nomani Alvi, 2017</li>
+	</ul>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollzer.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+<script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+
+</body>
+</html>
