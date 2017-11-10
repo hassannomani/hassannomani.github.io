@@ -99,7 +99,39 @@
 		p.aboutText {
 		    margin-top: 39px;
 		}	    
+		.overlay {
+		  position: absolute;
+		  top: 0;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  height: 100%;
+		  width: 100%;
+		  opacity: 0;
+		  transition: .5s ease;
+		  background-color: #222629;
+		}
 
+		.containerProject {
+		  position: relative;
+		}
+		.containerProject:hover .overlay {
+		  opacity: 0.8;
+		}
+
+		.text {
+			color: white;
+			font-size: 15px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			line-height: 150%;
+			width: 100%;
+    		padding: 0 15px;
+
+		}
 		    
 	</style>
 </head>
@@ -276,65 +308,121 @@
 			<div class="row">
 				<div class="4u 12u$(mobile)">
 					<article class="item">
-						<a href="https://podhop.com" class="image fit"><img src="images/podhop.png" alt="" /></a>
+						<div class="containerProject">
+
+							<a class="image fit"><img src="images/podhop.png" alt="" /></a>
+							<div class="overlay">
+							    <div class="text">Podhop is a social site made for the people of America and Canada. It is built with MongoDb, Express.js, Angular.js and Node.js.</div>
+							</div>
+						</div>	
 						<header>
-							<h3>Podhop</h3>
+							<h3><a href="https://podhop.com" ">Podhop</a></h3>
 						</header>
 					</article>
 					<article class="item">
-						<a href="http://amaderparis.com" class="image fit"><img src="images/amaderparis.png" alt="" /></a>
+						<div class="containerProject">
+							<a class="image fit"><img src="images/amaderparis.png" alt="" /></a>
+							<div class="overlay">
+							    <div class="text">Amader Paris is an website that contains the lists of websites in France. It is built with CodeIgniter, MySQL and WordPress.</div>
+							</div>
+						</div>
 						<header>
-							<h3>Amader Paris</h3>
+							<h3><a href="http://amaderparis.com">Amader Paris</a></h3>
 						</header>
 					</article>
 					<article class="item">
-						<a href="android.html" class="image fit"><img src="images/android.png" alt="Android" /></a>
+						<div class="containerProject">
+
+							<a class="image fit"><img src="images/android.png" alt="Android" /></a>
+							<div class="overlay">
+							    <div class="text">DiaHealth is an andoid app which is used for Diabetes Lifestyle Management. It is built with Android, SQLite.</div>
+							</div>
+						</div>
 						<header>
-							<h3>DiaHealth</h3>
+							<h3><a href="android.html">DiaHealth</a></h3>
 						</header>
 					</article>
 					<article class="item">
-						<a href="http://neutral.gr/machine" class="image fit"><img src="images/machine.png" alt="" /></a>
+						<div class="containerProject">
+
+							<a class="image fit"><img src="images/machine.png" alt="" /></a>
+							<div class="overlay">
+							    <div class="text">Machine is an website that is used for renting and hiring machine for various purposed. It uses WordPress, MySQL. </div>
+							</div>
+						</div>
 						<header>
-							<h3>Machine </h3>
+							<h3><a href="http://neutral.gr/machine">Machine</a></h3>
 						</header>
 					</article>
 				</div>
 				<div class="4u 12u$(mobile)">
 					<article class="item">
-						<a href="https://www.pictureframes-online.com.au/" class="image fit"><img src="images/frameshop.png" alt="" /></a>
+						<div class="containerProject">
+
+							<a class="image fit"><img src="images/frameshop.png" alt="" /></a>
+							<div class="overlay">
+							    <div class="text">Online Frame Shop is an website that is famous for making various picture frames. Visitors can make their own frame or can buy the existing. It uses WordPress, MySQL. </div>
+							</div>
+						</div>
 						<header>
-							<h3>Online Frame Shop</h3>
+							<h3><a href="https://www.pictureframes-online.com.au/">Online Frame Shop</a></h3>
 						</header>
 					</article>
 					<article class="item">
-						<a href="http://thelivedemo.net/joomla/mods24" class="image fit"><img src="images/math.png" alt="" /></a>
+						<div class="containerProject">
+							<a class="image fit"><img src="images/math.png" alt="" /></a>
+							<div class="overlay">
+							    <div class="text">Mods24 is a JavaScript math challenge website. A person has to match the target with existing cards within fixed time. It uses JQuery, Bootstrap. </div>
+							</div>
+						</div>
 						<header>
-							<h3>Math Challenge </h3>
+							<h3><a href="http://thelivedemo.net/joomla/mods24">Math Challenge </a></h3>
 						</header>
 					</article>
 					<article class="item">
-						<a href="http://hackasolution" class="image fit"><img src="images/hackasolution.png" alt="" /></a>
+						<div class="containerProject">
+
+							<a class="image fit"><img src="images/hackasolution.png" alt="" /></a>
+							<div class="overlay">
+							    <div class="text">Hackasolution is an web app for connecting the best developer to the best client. It is built with MongoDb, Express.js, Angular.js and Node.js. </div>
+							</div>
+						</div>
 						<header>
-							<h3>Hackasolution </h3>
+							<h3><a href="http://hackasolution">Hackasolution</a></h3>
 						</header>
 					</article>
 				</div>
 				<div class="4u$ 12u$(mobile)">
 					<article class="item">
-						<a href="tastehunt.html" class="image fit"><img src="images/Untitled1.png" alt="" /></a>
+						<div class="containerProject">
+
+							<a class="image fit"><img src="images/Untitled1.png" alt="" /></a>
+							<div class="overlay">
+							    <div class="text">TasteHunt is an web app for rating foods and restaurants across the country. It is built with PHP, MySQL, JQuery and boostrap. </div>
+							</div>
+						</div>
 						<header>
-							<h3>TasteHunt</h3>
+							<h3><a href="tastehunt.html" >TasteHunt</a></h3>
 						</header>
 					</article>
 					<article class="item">
-						<a href="http://104.131.145.230/" class="image fit"><img src="images/patarboi.png" alt="" /></a>
+						<div class="containerProject">
+							<a class="image fit"><img src="images/patarboi.png" alt="" /></a>
+							<div class="overlay">
+							    <div class="text">PatarBoi,an web for kids, allows reading picture books. Internal system manages author, artists, reviewers. It is built with MongoDB, Express.js, Node.js, JQuery, EJS. </div>
+							</div>
+						</div>
 						<header>
-							<h3>Patar Boi</h3>
+							<h3><a href="http://104.131.145.230/">Patar Boi</a></h3>
 						</header>
 					</article>
 					<article class="item">
-						<a href="#" class="image fit"><img src="images/navy.png" alt="" /></a>
+						<div class="containerProject">
+							<a href="#" class="image fit"><img src="images/navy.png" alt="" /></a>
+							<div class="overlay">
+							    <div class="text">This software was built for Bangladesh Navy for managing hardware items. Built with PHP, MySQL-PDO, Bootstrap.</div>
+							</div>
+						</div>
 						<header>
 							<h4 style="font-weight:600">Database Management Software- Bangladesh Navy</h4>
 						</header>
