@@ -1713,9 +1713,10 @@
 		}
 
 			.image.avatar48 img {				
-			    width: 200px;
-			    height: 200px;
-			    margin-right: 25px;
+			    width: auto;
+			    height: auto;
+			    margin-right: auto;
+			    margin-left: auto;
 			}
 
 		.image.fit {
@@ -2012,7 +2013,7 @@
 			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
-			padding: 1.5em 0 0.75em 0;
+			padding: 0.5em 0 0.2em 0;
 		}
 
 			#header .bottom > :last-child {
@@ -2038,8 +2039,7 @@
 
 	#logo {
 		position: relative;
-		/*margin: 1.75em 1.5em 1.5em 1.5em;*/
-		margin: 1em;
+		margin: 0.5em 1em 1em 1em;
 		min-height: 48px;
 		cursor: default;
 	}
@@ -2065,7 +2065,7 @@
 			/*position: absolute;
 			left: 0;
 			top: 0;*/
-			text-align: center;
+			display: block;
 		}
 
 		#logo .logoText {
@@ -2078,7 +2078,7 @@
 
 		#nav ul li a {
 			display: block;
-			padding: 0.5em 1.5em 0.5em 1.5em;
+			padding: 0.1em 1.5em;
 			color: rgba(255, 255, 255, 0.5);
 			text-decoration: none;
 			outline: 0;
@@ -2508,7 +2508,12 @@
 				}
 
 	}
-
+	#main>#about{
+		background-image: url('../../images/aboutme.jpg');
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 /* Mobile */
 
 	@media screen and (max-width: 736px) {
@@ -2565,3 +2570,4 @@
 				}
 
 	}
+
