@@ -149,20 +149,13 @@
 			<div class="image avatar48"><img src="images/openup.png" alt="banner_img" id="banner_img"/></div>
 			<div class="logoText">
 				<h1 id="title">Hassan Nomani Alvi</h1>
-				<p>Computer Science Engineer</p>
+				<p>Web Developer and Software Engineer</p>
 			</div>
 
 		</div>
 
 		<!-- Nav -->
 		<nav id="nav">
-			<!--
-                Prologue's nav expects links in one of two formats:
-                1. Hash link (scrolls to a different section within the page)
-                   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
-                2. Standard link (sends the user to another page/site)
-                   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-            -->
 			<ul>
 				<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
 				<li><a href="#education" id="education-link" class="skel-layers-ignoreHref"><span class="icon fa-graduation-cap">Education</span></a></li>
@@ -200,9 +193,9 @@
 		<div class="container">
 
 			<header>
-				<h2 class="alt">Hi! <strong>I am Hassan Nomani Alvi,</strong><br />
+				<h2 class="alt">Hi! I am <strong>Alvi,</strong> Nice to meet you!<br />
 				</h2>
-				<h3 class="alt">A  Web Developer and a Software Engineer</h3>
+				<span id="typed2"></span>
 				<!--<p>Ligula scelerisque justo sem accumsan diam quis<br />
                 vitae natoque dictum sollicitudin elementum.</p>-->
 			</header>
@@ -646,6 +639,19 @@
 <script src="assets/js/main.js"></script>
 <script data-cfasync="false" type="text/javascript"
 src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
-
+<script src="assets/js/typed.js"></script> 
+<script type="text/javascript">
+	$(function(){
+		var options={
+			strings: ['People falling the hardest bounce back the highest', 'Shoot for the moon, even if you fall, you will land among the stars'],
+		    typeSpeed: 150,
+		    backSpeed: 0,
+		    fadeOut: true,
+		    loop: true
+		}
+		var typed = new Typed("#typed2", options);
+	})
+	
+</script>
 </body>
 </html>
