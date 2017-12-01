@@ -2191,6 +2191,7 @@
 			#main > section.one {
 				background-color: #81918E;
 				background-image: url("../../images/banner.jpg");
+				min-height: 100vh;
 			}
 
 			#main > section.two {
@@ -2204,7 +2205,35 @@
 			#main > section.four {
 				background-color: #e8edec;
 			}
-
+			.skillText {
+			    text-align: left;
+			    font-size: 16px;
+			    line-height: 38px;
+			}
+			.html {width: 85%; background-color: #2bc253;}
+			.c {width: 80%; background-color: #fc858e;}
+			.jQuery {width: 76%; background-color: #f1a165;}
+			.nodejs {width: 63%; background-color: #8ec1f8;}
+			.php {width: 69%; background-color: #f1afe4;}
+			.angularjs {width: 58%; background-color: #d8d894;}
+			.cpp {width: 62%; background-color: #b5e058;}
+			.css {width: 68%; background-color: #8681fc;}
+			.prezi {width: 74%; background-color: #fc515e;}
+			
+			.skills {
+			    text-align: right;
+			    padding-right: 20px;
+			    line-height: 21px;
+			    color: white;
+			    border-radius: 5px;
+			}
+			.skillItem{
+				margin-bottom: 0px !important
+			}
+			#contactSubmitted:hover {
+			    color: #FFF !important;
+			    background-color: #000 !important;
+			}
 /* Wide */
 
 	@media screen and (min-width: 961px) and (max-width: 1880px) {
