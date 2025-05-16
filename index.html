@@ -29,11 +29,10 @@
 		    font-weight: 600;
 		    border: 1px solid #FFF;
 		    transition:  1s
-		    -webkit-transition:  1s;
 		}
-		a.button.scrolly.white: hover{
+		/* a.button.scrolly.white: hover{
 		    border: 3px solid #FFF;
-		}
+		} */
 		a.button.scrolly.black {
 		    color: #000 !important;
 		    background: none;
@@ -43,7 +42,9 @@
 		    border-radius: none !important;
 		}
 		.image.avatar48 img {
-		    height: auto;
+		    height: 119px;
+			width: 120px;
+			border-radius: 50%;
 		}
 		form textarea {
 		    min-height: 7em;
@@ -58,8 +59,7 @@
 		p.barText {
 		    font-size: 18px;
 		}
-		section#skillsection>.container>.row {
-		}
+	
 		.skillHeading {    
 			margin: 1em 0 2em;
 			text-align: left; 
@@ -117,7 +117,24 @@
 		.one.dark.cover>.container>footer>.scrolly>i.fa.fa-chevron-down {
 		    margin-top: 25%;
 		}
-		    
+		.inline-text{
+			float: left;
+		}
+		.skillItem{
+			display: block;
+			clear: both;
+			text-align: justify;
+		}
+		.lable{
+			font-weight: 900;
+		}
+		.paper h5, p{
+			float: left;
+		}
+
+		.paper h5 {
+			font-weight: 600;
+		}
 	</style>
 </head>
 <body>
@@ -129,10 +146,9 @@
 
 		<!-- Logo -->
 		<div id="logo">
-			<div class="image avatar48"><img src="images/openup.png" alt="banner_img" id="banner_img"/></div>
+			<div class="image avatar48"><img src="images/Hassan_Nomani_Alvi.jpg" alt="banner_img" id="banner_img"/></div>
 			<div class="logoText">
 				<h1 id="title">Hassan Nomani Alvi</h1>
-				<p>Web Developer and Software Engineer</p>
 			</div>
 
 		</div>
@@ -141,7 +157,7 @@
 		<nav id="nav">
 			<ul>
 				<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-				<li><a href="#education" id="education-link" class="skel-layers-ignoreHref"><span class="icon fa-graduation-cap">Education</span></a></li>
+				<!-- <li><a href="#education" id="education-link" class="skel-layers-ignoreHref"><span class="icon fa-graduation-cap">Education</span></a></li> -->
 				<li><a href="#experience" id="experience-link" class="skel-layers-ignoreHref"><span class="icon fa-star">Experience</span></a></li>
 				<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
 				<li><a href="#skillsection" id="skillsection-link" class="skel-layers-ignoreHref"><span class="icon fa-bar-chart">Skills</span></a></li>
@@ -157,9 +173,8 @@
 
 		<!-- Social Icons -->
 		<ul class="icons">
-     		<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="https://www.facebook.com/iamredsaiyan" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-            <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+            <li><a href="https://www.facebook.com/thehnalvi" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="https://github.com/hassannomani" class="icon fa-github"><span class="label">Github</span></a></li>
             <li><a href="https://www.linkedin.com/in/hassan-nomani-alvi/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
             <li><a href="mailto:nomanialvi@gmail.com?Subject=Hello" target="_top" class="icon fa-envelope"><span class="label">Email</span></a></li>
 		</ul>
@@ -179,19 +194,18 @@
 				<h2 class="alt">Hi! I am <strong>Alvi,</strong> Nice to meet you!<br />
 				</h2>
 				<span id="typed2"></span>
-				<!--<p>Ligula scelerisque justo sem accumsan diam quis<br />
-                vitae natoque dictum sollicitudin elementum.</p>-->
+				
 			</header>
 
 			<footer>
-				<a href="#education" class="scrolly"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+				<a href="#experience" class="scrolly"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 			</footer>
 
 		</div>
 	</section>
 
 	<!--Education -->
-	<section id="education" class="two">
+	<!-- <section id="education" class="two">
 		<div class="container">
 
 			<header>
@@ -208,7 +222,7 @@
 
 
 		</div>
-	</section>
+	</section> -->
 
 	<!--Experience -->
 	<section id="experience" class="two">
@@ -219,15 +233,61 @@
 			</header>
 
 			<div class="row">
+
 				<div class="6u 12u$(mobile)">
+					<article class="item">
+						<header>
+							<h3>National Board of Revenue</h3>
+						</header>
+						<h5>Assistant Programmer</h5>
+						<p>Spring Boot, Java, Angular, MSSQL, Prometheus, Grafana</p>
+						<p class="greySmall">December 2020 - Current</p>
+					</article>
+				</div>
+				<div class="6u 12u$(mobile)">
+
+					<article class="item">
+						<header>
+							<h3>Department of ICT, ICT Ministry</h3>
+						</header>
+						<h5>Assistant Programmer</h5>
+						<p>Node.js, AngularJS, Express.js, MongoDB</p>
+						<p class="greySmall">June 2019- November, 2020</p>
+					</article>
+				</div>
+			</div>
+
+			<div class="row">
+
+				<div class="6u 12u$(mobile)">
+					
+					<article class="item">
+						<header>
+							<h3>Agrani Bank Limited</h3>
+						</header>
+						<h5>Officer ICT</h5>
+						<p>PHP, MySQL, CodeIgniter,JavaScript</p>
+						<p class="greySmall">July, 2018- June, 2019</p>
+
+					</article>
+				</div>
+				<div class="6u 12u$(mobile)">
+
 					<article class="item">
 						<header>
 							<h3>Monist IT</h3>
 						</header>
-						<h5>Junior Software Engineer</h5>
+						<h5>Software Engineer</h5>
 						<p>Node.js, AngularJS, Express.js, MongoDB, JQuery</p>
-						<p class="greySmall">October 17, 2016- Current</p>
+						<p class="greySmall">October 17, 2016- February, 2018</p>
 					</article>
+				</div>
+			</div>
+
+			<div class="row">
+
+				<div class="6u 12u$(mobile)">
+					
 					<article class="item">
 						<header>
 							<h3>NeshMedia Bangladesh </h3>
@@ -238,17 +298,26 @@
 
 					</article>
 				</div>
-
 				<div class="6u 12u$(mobile)">
+
 					<article class="item">
 						<header>
-							<h3>Military Institute of Science and Technology</h3>
+							<h3>Bangladesh Navy (Inventory Management System Project)</h3>
 						</header>
-						<h5>Lab Assistant</h5>
-						<p>C</p>
-						<p class="greySmall">September 1, 2015 - October 15, 2015</p>
+						<h5>Software Engineer</h5>
+						<p>PHP, CodeIgniter, MySQL</p>
+						<p class="greySmall">February, 2016 - July, 2015</p>
 
 					</article>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+
+				<div class="6u 12u$(mobile)">
+					
 					<article class="item">
 						<header>
 							<h3>Military Institute of Science and Technology </h3>
@@ -258,6 +327,19 @@
 						<p class="greySmall">March 10, 2016 - April 21, 2016</p>
 
 					</article>
+				</div>
+				<div class="6u 12u$(mobile)">
+
+					<article class="item">
+						<header>
+							<h3>Military Institute of Science and Technology </h3>
+						</header>
+						<h5>Instructor-Coding Session</h5>
+						<p>C</p>
+						<p class="greySmall">October, 2015 - November, 2015</p>
+
+					</article>
+
 				</div>
 			</div>
 
@@ -279,61 +361,76 @@
 				<h2>Portfolio</h2>
 			</header>
 
-			<p>I have worked in several langauages like -PHP, MySQL, Node.js, AngularJS, MongoDB, JQuery, Java, Android.</p><br>
 			<h3 class="skillHeading">
 				Website / Application Development and Design
 			</h3>
 			<div class="row">
+
 				<div class="4u 12u$(mobile)">
 					<article class="item">
 						<div class="containerProject">
 
-							<a class="image fit"><img src="images/podhop.PNG" alt="" /></a>
+							<a class="image fit"><img src="images/trp.PNG" alt="" /></a>
 							<div class="overlay">
-							    <div class="text">Podhop is a social site made for the people of America and Canada. It is built with MongoDb, Express.js, Angular.js and Node.js.</div>
+							    <div class="text">Tax Return Preparer, National Board of Revenue aims at increasing tax return submission of the taxpayers, distributing the commissioning to the TRPs who associate tax submission</div>
 							</div>
 						</div>	
 						<header>
-							<h3><a href="https://podhop.com" ">Podhop</a></h3>
-						</header>
-					</article>
-					<article class="item">
-						<div class="containerProject">
-							<a class="image fit"><img src="images/amaderparis.PNG" alt="" /></a>
-							<div class="overlay">
-							    <div class="text">Amader Paris is an website that contains the lists of websites in France. It is built with CodeIgniter, MySQL and WordPress.</div>
-							</div>
-						</div>
-						<header>
-							<h3><a href="http://amaderparis.com">Amader Paris</a></h3>
-						</header>
-					</article>
-					<article class="item">
-						<div class="containerProject">
-
-							<a class="image fit"><img src="images/android.png" alt="Android" /></a>
-							<div class="overlay">
-							    <div class="text">DiaHealth is an andoid app which is used for Diabetes Lifestyle Management. It is built with Android, SQLite.</div>
-							</div>
-						</div>
-						<header>
-							<h3><a href="android.html">DiaHealth</a></h3>
-						</header>
-					</article>
-					<article class="item">
-						<div class="containerProject">
-
-							<a class="image fit"><img src="images/machine.PNG" alt="" /></a>
-							<div class="overlay">
-							    <div class="text">Machine is an website that is used for renting and hiring machine for various purposed. It uses WordPress, MySQL. </div>
-							</div>
-						</div>
-						<header>
-							<h3><a href="http://neutral.gr/machine">Machine</a></h3>
+							<h3><a href="http://114.130.118.118/ ">Tax Return Preparer</a></h3>
 						</header>
 					</article>
 				</div>
+
 				<div class="4u 12u$(mobile)">
+					<article class="item">
+						<div class="containerProject">
+							<a class="image fit"><img src="images/cic.PNG" alt="" /></a>
+							<div class="overlay">
+							    <div class="text">CIC Office Management System is used to manage all the files of different cases and investigations</div>
+							</div>
+						</div>
+						<header>
+							<h3><a href="http://cic.gov.bd">CIC Office Management System</a></h3>
+						</header>
+					</article>
+				</div>
+	
+				<div class="4u 12u$(mobile)">
+					<article class="item">
+						<div class="containerProject">
+							<a href="#" class="image fit"><img src="images/navy.PNG" alt="" /></a>
+							<div class="overlay">
+							    <div class="text">Inventory Management System, Bangladesh Navy for managing communication equipments.</div>
+							</div>
+						</div>
+						<header>
+							<h4 style="font-weight:600">Inventory Management System- Bangladesh Navy</h4>
+						</header>
+					</article>
+					
+				</div>
+				
+
+			</div>
+			<div class="row">
+
+				<div class="4u 12u$(mobile)">
+					<article class="item">
+						<div class="containerProject">
+							<a class="image fit"><img src="images/math.PNG" alt="" /></a>
+							<div class="overlay">
+							    <div class="text">Math Challenge is a game of math using JavaScript. The player has to generate the target number using the provided cards within the allotted time.</div>
+							</div>
+						</div>
+
+						<header>
+							<h3><a href="https://hassannomani.github.io/mathChallenge/">Math Challenge </a></h3>
+						</header>
+					</article>
+				</div>
+
+				<div class="4u 12u$(mobile)">
+
 					<article class="item">
 						<div class="containerProject">
 
@@ -346,33 +443,29 @@
 							<h3><a href="https://www.pictureframes-online.com.au/">Online Frame Shop</a></h3>
 						</header>
 					</article>
-					<article class="item">
-						<div class="containerProject">
-							<a class="image fit"><img src="images/math.PNG" alt="" /></a>
-							<div class="overlay">
-							    <div class="text">Mods24 is a JavaScript math challenge website. A person has to match the target with existing cards within fixed time. It uses JQuery, Bootstrap. </div>
-							</div>
-						</div>
-
-						<header>
-							<h3><a href="http://thelivedemo.net/joomla/mods24">Math Challenge </a></h3>
-						</header>
-					</article>
-					<article class="item">
-						<div class="containerProject">
-
-							<a class="image fit"><img src="images/hackasolution.PNG" alt="" /></a>
-							<div class="overlay">
-							    <div class="text">Hackasolution is an web app for connecting the best developer to the best client. It is built with MongoDb, Express.js, Angular.js and Node.js. </div>
-							</div>
-						</div>
-
-						<header>
-							<h3><a href="http://hackasolution">Hackasolution</a></h3>
-						</header>
-					</article>
 				</div>
-				<div class="4u$ 12u$(mobile)">
+
+				<div class="4u 12u$(mobile)">
+					<article class="item">
+						<div class="containerProject">
+							<a class="image fit"><img src="images/patarboi.PNG" alt="" /></a>
+							<div class="overlay">
+							    <div class="text">PatarBoi,an web for kids, allows reading picture books. Internal system manages author, artists, reviewers. It is built with MongoDB, Express.js, Node.js, JQuery, EJS. </div>
+							</div>
+						</div>
+						<header>
+							<h3><a href="http://165.227.34.7/">Patar Boi</a></h3>
+						</header>
+					</article>
+				
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="4u 12u$(mobile)">
+					
 					<article class="item">
 						<div class="containerProject">
 
@@ -385,58 +478,72 @@
 							<h3><a href="tastehunt.html" >TasteHunt</a></h3>
 						</header>
 					</article>
+				</div>
+				
+				<div class="4u 12u$(mobile)">		
 					<article class="item">
 						<div class="containerProject">
-							<a class="image fit"><img src="images/patarboi.PNG" alt="" /></a>
+
+							<a class="image fit"><img src="images/android.png" alt="Android" /></a>
 							<div class="overlay">
-							    <div class="text">PatarBoi,an web for kids, allows reading picture books. Internal system manages author, artists, reviewers. It is built with MongoDB, Express.js, Node.js, JQuery, EJS. </div>
+							    <div class="text">DiaHealth is an andoid app, 
+									created as a part of the thesis on "Diabetes Lifestyle Management
+									 using mobile application",
+									which is used for Diabetes Lifestyle Management.</div>
 							</div>
 						</div>
 						<header>
-							<h3><a href="http://165.227.34.7/">Patar Boi</a></h3>
+							<h3><a href="android.html">DiaHealth</a></h3>
 						</header>
 					</article>
+				</div>
+
+				
+				<div class="4u 12u$(mobile)">		
 					<article class="item">
 						<div class="containerProject">
-							<a href="#" class="image fit"><img src="images/navy.PNG" alt="" /></a>
+
+							<a class="image fit"><img src="images/amaderparis.png" alt="Amader Paris" /></a>
 							<div class="overlay">
-							    <div class="text">This software was built for Bangladesh Navy for managing hardware items. Built with PHP, MySQL-PDO, Bootstrap.</div>
+							    <div class="text">Amader Paris is a Paris based Bengali Platform that 
+									helps Bangladeshi connect Europewide.</div>
 							</div>
 						</div>
 						<header>
-							<h4 style="font-weight:600">Database Management Software- Bangladesh Navy</h4>
+							<h3><a href="android.html">Amader Paris</a></h3>
 						</header>
 					</article>
 				</div>
 			</div>
+
 			<h3 class="skillHeading">
 				Prezi Presentation
 			</h3>
 			<div class="row">
-			<div class="4u 12u$(mobile)">
-				<article class="item">
-					<a href="https://prezi.com/_u8gkv87eweh/diabetes-lifestyle-management/" class="image fit"><img src="images/prezi.PNG" alt="" /></a>
-					<header>
-						<h3>Diabetes Lifestyle Management</h3>
-					</header>
-				</article>
-			</div>
-			<div class="4u 12u$(mobile)">
-				<article class="item">
-					<a href="https://prezi.com/nqmwwfn4m7fi/a-review-on-diabetes-patient-lifestyle-management-using-mobile-application/" class="image fit"><img src="images/prezi2.PNG" alt="" /></a>
-					<header>
-						<h3>A Review on Diabetes Patient Lifestyle Management Using Mobile Application</h3>
-					</header>
-				</article>
-			</div>
-			<div class="4u 12u$(mobile)">
-				<article class="item">
-					<a href="https://prezi.com/iyofljcsxog8/brain-drain/" class="image fit"><img src="images/prezi3.PNG" alt="" /></a>
-					<header>
-						<h3>Brain Drain in Bangladesh</h3>
-					</header>
-				</article>
-			</div>
+				<div class="4u 12u$(mobile)">
+					<article class="item">
+						<a href="https://prezi.com/_u8gkv87eweh/diabetes-lifestyle-management/" class="image fit"><img src="images/prezi.PNG" alt="" /></a>
+						<header>
+							<h3>Diabetes Lifestyle Management</h3>
+						</header>
+					</article>
+				</div>
+				<div class="4u 12u$(mobile)">
+					<article class="item">
+						<a href="https://prezi.com/nqmwwfn4m7fi/a-review-on-diabetes-patient-lifestyle-management-using-mobile-application/" class="image fit"><img src="images/prezi2.PNG" alt="" /></a>
+						<header>
+							<h3>A Review on Diabetes Patient Lifestyle Management Using Mobile Application</h3>
+						</header>
+					</article>
+				</div>
+				<div class="4u 12u$(mobile)">
+					<article class="item">
+						<a href="https://prezi.com/iyofljcsxog8/brain-drain/" class="image fit"><img src="images/prezi3.PNG" alt="" /></a>
+						<header>
+							<h3>Brain Drain in Bangladesh</h3>
+						</header>
+					</article>
+				</div>
 			</div>
 
 			<footer>
@@ -454,45 +561,37 @@
 				<h2>Skills</h2>
 			</header>
 
-			<p>Have a quick look over my skills bar. I also have experience working with C++, Java, Android, Shell Programming</p><br>
 
 			<div class="row">
 				<div class="12u 12u$(mobile)">
 					<article class="item skillItem">
-						<p class="skillText">HTML</p>	
-						<div class="skills html"><p class="barText">85%</p></div>
+						<p class="inline-text lable">
+							Languages: 
+						</p>	
+						<p class="inline-text">C, C++, PHP, Node.js, Java, Android,
+							 Angular, Vue.js, jQuery, Vanilla JavaScript, JSON, HTML,
+							  CSS3, Bootstrap, Angular Material </p>
 					</article>
+
 					<article class="item skillItem">
-						<p class="skillText">C</p>	
-						<div class="skills c"><p class="barText">80%</p></div>
+						<p class="inline-text lable">
+							Database: 
+						</p>	
+						<p class="inline-text"> MySQL, MongoDB, MSSQL </p>
 					</article>
+			
 					<article class="item skillItem">
-						<p class="skillText">jQuery</p>	
-						<div class="skills jQuery"><p class="barText">76%</p></div>
+						<p class="inline-text lable">
+							DevOps:
+						</p>	
+						<p class="inline-text">Git, Github, Bitbucket, Prometheus, Grafana, Docker, DigitalOcean</p>
 					</article>
+
 					<article class="item skillItem">
-						<p class="skillText">node.js</p>	
-						<div class="skills nodejs"><p class="barText">63%</p></div>
-					</article>
-					<article class="item skillItem">
-						<p class="skillText">PHP</p>	
-						<div class="skills php"><p class="barText">69%</p></div>
-					</article>
-					<article class="item skillItem">
-						<p class="skillText">AngularJs</p>	
-						<div class="skills angularjs"><p class="barText">58%</p></div>
-					</article>
-					<article class="item skillItem">
-						<p class="skillText">CSS</p>	
-						<div class="skills css"><p class="barText">60%</p></div>
-					</article>
-					<article class="item skillItem">
-						<p class="skillText">C++</p>	
-						<div class="skills cpp"><p class="barText">62%</p></div>
-					</article>
-					<article class="item skillItem">
-						<p class="skillText">Prezi</p>	
-						<div class="skills prezi"><p class="barText">74%</p></div>
+						<p class="inline-text lable">
+							Tools:
+						</p>	
+						<p class="inline-text">Visual Studio Code, IntelliJ IDEA, Postman, Maven, npm</p>
 					</article>
 				</div>
 			</div>
@@ -513,23 +612,25 @@
 			</header>
 
 			<div class="row">
-				<div class="6u 12u$(mobile)">
-					<article class="item">
-						<img src="images/paper00.PNG" alt="ICCIT 2015" class="image fit paper"/> 
-						<header>
-							<h3>A Review on Diabetes Patient Lifestyle Management Using Mobile Application</h3>
-						</header>
-						<p>ICCIT 2015</p>
-					</article>
-				</div>
-				<div class="6u 12u$(mobile)">
-					<article class="item">
-						<img src="images/paper.PNG" alt="Meditec 2015" class="image fit paper"/> 
-						<header>
-							<h3>DiaHealth: A Smart App for Complete Diabetes Lifestyle Managementg Mobile Application</h3>
-						</header>
-						<p>Meditec 2016</p>
-					</article>
+				<div class="12u 12u$(mobile)">
+					<div class="paper">
+						<a href="https://ieeexplore.ieee.org/abstract/document/7488100">
+							<h5>A review on diabetes patient lifestyle management using 
+								mobile application
+							</h5>
+						</a>
+						<p>2015, 18th International Conference on Computer and Information Technology (ICCIT)
+						</p>
+
+					</div>
+				<div class="12u 12u$(mobile)">
+					<div class="paper">
+						<a href="https://ieeexplore.ieee.org/abstract/document/7835396/">
+							<h5>DiaHealth: a smart app for complete diabetes lifestyle management</h5>
+
+						</a>
+						<p>2016, International Conference on Medical Engineering, Health Informatics and Technology (MediTec)</p>
+					</div>
 				</div>
 			</div>
 
